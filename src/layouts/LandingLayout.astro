@@ -1,0 +1,33 @@
+---
+export interface Props {
+	color: string;
+}
+
+const { color } = Astro.props as Props;
+---
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width" />
+		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+		<meta name="generator" content={Astro.generator} />
+	</head>
+	<body>
+		<nav>
+			<a href="#">Home</a>
+			<a href="#">Posts</a>
+			<a href="#">Contact</a>
+		</nav>
+		<article>
+			<slot />
+			<!-- your content is injected here -->
+		</article>
+		<style>
+			body{
+				height: 100vh;
+			}
+		</style>
+	</body>
+</html>
