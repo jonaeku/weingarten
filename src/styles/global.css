@@ -1,5 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
 
 .font-head {
     font-family: 'Bungee', cursive;
+}
+
+.font-head-thin {
+    font-family: 'Bungee Hairline', cursive;
 }

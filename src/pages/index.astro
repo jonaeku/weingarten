@@ -1,16 +1,47 @@
 ---
+import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
 ---
 
 <Layout title="Weingarten Maikammer">
-	<LandingLayout color="#E8E7E7" />
-	<main>
-	</main>
+	<LandingLayout color="#E8E7E7">
+		<div
+			class="flex flex-col items-center lg:bg-[#E8E7E7] lg:bg-lol lg:pl-[12.5%] lg:pr-[6%] mt-[6%]"
+		>
+			<div>
+				<h1 class="font-head lg:text-5xl lg:leading-[80px]">
+					Delikatessen
+				</h1><h1
+					class="inline-block font-head-thin lg:text-5xl lg:leading-[80px]"
+				>
+					& &nbsp;
+				</h1><h1
+					class="font-head inline-block lg:text-5xl lg:leading-[80px]"
+				>
+					Weine &nbsp;
+				</h1><h1
+					class="inline-block font-head-thin lg:text-5xl lg:leading-[80px]"
+				>
+					im
+				</h1><h1 class="font-head-thin lg:text-5xl lg:leading-[80px]">
+					Idyllischen
+				</h1>
+				<h1 class="font-head lg:text-5xl lg:leading-[80px]">
+					Weingarten
+				</h1>
+			</div">
+		</div>
+		<hr class="bg-black border-none h-0.5 mt-6 w-2/3 lg:hidden" />
+	</LandingLayout>
+	<main></main>
 </Layout>
 
 <style>
 	:root {
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
+	}
+	:global(html) {
+		scroll-behavior: smooth;
 	}
 </style>
