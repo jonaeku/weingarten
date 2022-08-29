@@ -1,0 +1,43 @@
+.contentCardContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contentCardPicture {
+    width: 100%;
+    max-width: 400px;
+    max-height: 400px;
+}
+
+.contentCardText {
+    width: 70%;
+    text-align: justify;
+    padding-top: 40px;
+    font-family: 'GFS Neohellenic', sans-serif;
+    font-size: 20px;
+}
+
+.contentCardHeader {
+    font-family: 'Bungee', cursive;
+    font-size: 30px;
+}
+
+@media only screen and (max-width: 600px) {
+    .contentCardContainer {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .contentCardText {
+        width: 100%;
+        text-align: center;
+        padding-top: 40px;
+        padding-bottom: 20px;
+    }
+    .contentCardHeader {
+        text-align: center;
+    }
+}

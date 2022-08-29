@@ -2,6 +2,7 @@
 import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
+import ContentCard from "../components/ContentCard";
 ---
 
 <Layout title="Weingarten Maikammer" color="#E8E7E7">
@@ -30,11 +31,18 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 				<h1 class="font-head lg:text-5xl lg:leading-[80px]">
 					Weingarten
 				</h1>
-			</div">
+			</div>
 		</div>
 		<hr class="bg-black border-none h-0.5 mt-6 w-2/3 lg:hidden" />
 	</LandingLayout>
-	<main></main>
+	<main class="px-[8%] lg:px-[12.5%]">
+		<ContentCard
+			pictureLeft={false}
+			heading={"Saisonale Küche"}
+			text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
+			picture={"../../public/TestImage.png"}
+		/>
+	</main>
 </Layout>
 
 <style>
