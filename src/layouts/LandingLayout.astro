@@ -2,8 +2,9 @@
 import "../styles/global.css";
 export interface Props {
 	color: string;
+	img: string;
 }
-const { color } = Astro.props as Props;
+const { color, img } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -38,7 +39,7 @@ const { color } = Astro.props as Props;
 				</div>
 			</div>
 			<article
-				class="h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-red-300"
+				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-[url(/LandingPageBackground.jpeg)] bg-center bg-cover`}
 			>
 				<slot />
 				<!-- your content is injected here -->
