@@ -15,7 +15,7 @@ const { color } = Astro.props as Props;
 		<meta name="generator" content={Astro.generator} />
 	</head>
 	<body>
-		<div>
+		<div class="body lg:h-screen">
 			<div class="absolute h-1/6">
 				<div class={`w-screen bg-[${color}] h-6`}></div>
 				<div class="flex justify-center items-center">
@@ -37,7 +37,9 @@ const { color } = Astro.props as Props;
 					/>
 				</div>
 			</div>
-			<article class="h-screen flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-red-300">
+			<article
+				class="h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-red-300"
+			>
 				<slot />
 				<!-- your content is injected here -->
 			</article>
@@ -51,9 +53,19 @@ const { color } = Astro.props as Props;
 			</div>
 		</div>
 		<style>
+			@supports (-webkit-touch-callout: none) {
+				.body {
+					height: 100svh;
+				}
+			}
+
+			@supports not (-webkit-touch-callout: none) {
+				.body {
+					height: 100vh;
+				}
+			}
 			body {
-				position: absolute;
-				height: 100dvh;
+				height: 100vh;
 			}
 		</style>
 	</body>
