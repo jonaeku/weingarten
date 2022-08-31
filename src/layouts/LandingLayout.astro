@@ -39,7 +39,7 @@ const { color, img } = Astro.props as Props;
 				</div>
 			</div>
 			<article
-				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-[url(/LandingPageBackground.jpeg)] bg-center bg-cover`}
+				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-[url(/LandingPageBackground.png)] bg-center bg-cover`}
 			>
 				<slot />
 				<!-- your content is injected here -->
@@ -69,6 +69,9 @@ const { color, img } = Astro.props as Props;
 			}
 			body {
 				height: 100vh;
+			}
+			.test {
+				filter: brightness(50%);
 			}
 		</style>
 	</body>
