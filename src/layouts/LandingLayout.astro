@@ -3,8 +3,9 @@ import "../styles/global.css";
 export interface Props {
 	color: string;
 	img: string;
+	menu: string;
 }
-const { color, img } = Astro.props as Props;
+const { color, img, menu } = Astro.props as Props;
 ---
 
 <!DOCTYPE html>
@@ -33,13 +34,13 @@ const { color, img } = Astro.props as Props;
 						<a class="hidden lg:flex" href="#">Über Uns</a>
 					</nav>
 					<img
-						class="absolute right-5 lg:hidden"
-						src="/burgerMenu.png"
+						class="fixed z-10 w-10 right-4 lg:hidden"
+						src={`${menu}`}
 					/>
 				</div>
 			</div>
 			<article
-				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start bg-[url(/LandingPageBackgroundTest.png)] bg-center bg-cover`}
+				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start  bg-center bg-cover ${img}`}
 			>
 				<slot />
 				<!-- your content is injected here -->
