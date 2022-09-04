@@ -6,8 +6,6 @@ export interface Props {
 	menu: string;
 }
 const { color, img, menu } = Astro.props as Props;
-
-
 ---
 
 <!DOCTYPE html>
@@ -27,33 +25,43 @@ const { color, img, menu } = Astro.props as Props;
 						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head"
 					>
 						<a class="hidden lg:flex" href="#">Unser Menü</a>
-						<a class="hidden lg:flex" href="#test">Küche</a>
-						<img
-							class={`w-56 lg:w-64 bg-[${color}] p-4 mt-[-1px]`}
-							src="/Logo.png"
-						/>
-						<a class="hidden lg:flex" href="#">Anlässe</a>
-						<a class="hidden lg:flex" href="#">Über Uns</a>
+						<a class="hidden lg:flex" href="#Küche">Küche</a>
+						<a href="/"
+							><img
+								class={`w-56 lg:w-64 bg-[#E8E7E7] p-4`}
+								src="/Logo.png"
+							/>
+						</a>
+						<a class="hidden lg:flex" href="/anlässe">Anlässe</a>
+						<a class="hidden lg:flex" href="#ÜberUns">Über Uns</a>
 					</nav>
-					<!-- <img
-						class="fixed z-10 w-10 right-4 lg:hidden"
-						src={`${menu}`}
-					/> -->
 				</div>
 				<!-- Hamburger icon -->
 				<input class="side-menu" type="checkbox" id="side-menu" />
 				<label class="hamb" for="side-menu"
 					><span class="hamb-line"></span>
 				</label>
-				<!-- Menu -->
 				<nav class="nav">
 					<ul class="menu font-head text-xl">
-						<li><a href="#">Unser Menü</a></li>
-						<li><a href="#">Küche</a></li>
-						<li><a href="#">Anlässe</a></li>
-						<li><a href="#">Über Uns</a></li>
+						<li>
+							<a href="/" onclick="closeMenu()">Startseite</a>
+						</li>
+						<li>
+							<a href="#" onclick="closeMenu()">Unser Menü</a>
+						</li>
+						<li>
+							<a href="#Küche" onclick="closeMenu()">Küche</a>
+						</li>
+						<li>
+							<a href="/anlässe" onclick="closeMenu()">Anlässe</a>
+						</li>
+						<li>
+							<a href="#ÜberUns" onclick="closeMenu()"
+								>Über Uns</a>
+						</li>
 					</ul>
 				</nav>
+				<!-- Menu -->
 			</div>
 			<article
 				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start  bg-center bg-cover ${img}`}
@@ -67,12 +75,18 @@ const { color, img, menu } = Astro.props as Props;
 				>
 				</div>
 				<div
-					class={`bg-[#E8E7E7] w-12 h-12 absolute bottom-0 rounded-full flex justify-center`}
+					class={`bg-[${color}] w-12 h-12 absolute bottom-0 rounded-full flex justify-center`}
 				>
-					<img class="w-8 object-contain" src="/arrow-black.png" />
+					<img class="w-8 object-contain" src={`${menu}`} />
 				</div>
 			</div>
 		</div>
+		<script is:inline>
+			function closeMenu() {
+				const checkbox = document.getElementById("side-menu");
+				checkbox.checked = !checkbox.checked;
+			}
+		</script>
 		<style>
 			@supports selector(:nth-child(1 of x)) {
 				.body {
@@ -94,6 +108,10 @@ const { color, img, menu } = Astro.props as Props;
 			:root {
 				--white: #f9f9f9;
 				--black: #565b60;
+			}
+
+			#Links {
+				display: none;
 			}
 
 			a {
@@ -126,7 +144,7 @@ const { color, img, menu } = Astro.props as Props;
 
 			.nav {
 				max-height: 0;
-				transition: max-height 0.5s ease-out;
+				transition: max-height 0.3s ease-out;
 				z-index: 15;
 			}
 
