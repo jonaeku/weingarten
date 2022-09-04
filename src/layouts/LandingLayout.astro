@@ -6,6 +6,8 @@ export interface Props {
 	menu: string;
 }
 const { color, img, menu } = Astro.props as Props;
+
+
 ---
 
 <!DOCTYPE html>
@@ -137,6 +139,7 @@ const { color, img, menu } = Astro.props as Props;
 				top: 70px;
 				right: 50px;
 				z-index: 20;
+				mix-blend-mode: exclusion;
 			}
 
 			.hamb-line {
