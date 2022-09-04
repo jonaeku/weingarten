@@ -2,11 +2,11 @@ import styles from'../styles/contentCard.module.css';
 
 const ContentCardLeft = ({ heading, text, picture }) => {
     return (
-        <div>
-            <img src={picture} />
+        <div className={styles.contentCardContainerRight}>
+            <img className={styles.contentCardPicture} src={picture} alt={`${picture}`} />
             <div>
-                <h2>{heading}</h2>
-                <p>{text}</p>
+                <h2 className={`${styles.contentCardHeader} sm:ml-10`}>{heading}</h2>
+                <p className={`${styles.contentCardText} sm:ml-10`}>{text}</p>
             </div>
         </div>
     );
