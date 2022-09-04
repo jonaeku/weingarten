@@ -3,10 +3,17 @@ import "../styles/global.css";
 import Layout from "../layouts/Layout.astro";
 import LandingLayout from "../layouts/LandingLayout.astro";
 import ContentCard from "../components/ContentCard";
+import Separator from "../components/Separator";
+import OpeningHours from "../components/OpeningHours";
+import Footer from "../components/Footer";
 ---
 
 <Layout title="Weingarten Maikammer" color="#E8E7E7">
-	<LandingLayout color="#E8E7E7" menu="/menuLight.png" img="bg-[url(/LandingPageBackground.png)] lg:bg-[url(/LandingPageBackground.jpeg)]">
+	<LandingLayout
+		color="#E8E7E7"
+		menu="/menuLight.png"
+		img="bg-[url(/LandingPageBackground.png)] lg:bg-[url(/LandingPageBackground.jpeg)]"
+	>
 		<div
 			class="flex flex-col items-center lg:bg-[#E8E7E7] lg:bg-lol lg:pl-[12.5%] lg:pr-[6%] mt-[6%]"
 		>
@@ -18,9 +25,9 @@ import ContentCard from "../components/ContentCard";
 				>
 					&
 				</h1><h1
-					class="font-head inline-block lg:text-5xl lg:leading-[80px] "
+					class="font-head inline-block lg:text-5xl lg:leading-[80px]"
 				>
-				&nbsp;Weine &nbsp;
+					&nbsp;Weine &nbsp;
 				</h1><h1
 					class="inline-block font-head-thin lg:text-5xl lg:leading-[80px]"
 				>
@@ -35,26 +42,54 @@ import ContentCard from "../components/ContentCard";
 		</div>
 		<hr class="bg-white border-none h-0.5 mt-6 w-2/3 lg:hidden" />
 	</LandingLayout>
-	<main class="px-[8%] lg:px-[12.5%]">
-		<ContentCard
-			pictureLeft={false}
-			heading={"Saisonale Küche"}
-			text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
-			picture={"/TestImage.png"}
+	<div class="relative">
+		<main>
+			<div class="px-[8%] lg:px-[12.5%] max-w-[1920px] mt-8">
+				<ContentCard
+					pictureLeft={false}
+					heading={"Saisonale Küche"}
+					text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
+					tel={false}
+					picture={"/pictures/TestImage.png"}
+				/>
+				<Separator color={"#565B60"} />
+				<ContentCard
+					pictureLeft={true}
+					heading={"Küche"}
+					text={"Unsere Köchin Ramona hat einen unglaublich hohen Qualtitäsanspruch. Das spielgt sich nicht nur im wundervollen Geschmack wieder sondern auch in der Wahl der Zutaten. Dieses werden immer frisch und regional eingekauft."}
+					tel={false}
+					picture={"/pictures/Burger.png"}
+				/>
+				<Separator color={"#565B60"} />
+			</div>
+			<OpeningHours />
+			<div class="px-[8%] lg:px-[12.5%] max-w-[1920px] mt-8">
+				<Separator color={"#565B60"} />
+				<ContentCard
+					pictureLeft={false}
+					heading={"Über uns"}
+					text={"Wir haben uns nach jahrelanger Erfahrung noch einmal dazu entschieden einen neuen Schritt zu wagen. Nur diesmal ist es nicht der Schritt von Sonja sondern die treibende Kraft ist Lukas welcher mit der Unterstützung seiner Mutter etwas tolles für seine Gäste leisten möchte..."}
+					tel={true}
+					picture={"/pictures/About.png"}
+				/>
+				<Separator color={"#565B60"} />
+			</div>
+			<a
+				href="https://www.google.de/maps/dir//Restaurant+Weingarten,+Gartenstra%C3%9Fe+15,+67487+Maikammer/@49.29984,8.1263513,17z/data=!4m8!4m7!1m0!1m5!1m1!1s0x47964f68e228b14d:0x114dfbafc8a67565!2m2!1d8.12854!2d49.29984"
+				><img
+					class="h-[400px] max-h-[800px] lg:h-auto w-full object-cover"
+					src="/map.png"
+					alt="Karte"
+				/>
+			</a>
+		</main>
+		<img
+			class="absolute bottom-0 right-0 z-20"
+			src="Sunflower.png"
+			alt="Sunflower"
 		/>
-		<ContentCard
-			pictureLeft={false}
-			heading={"Saisonale Küche"}
-			text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
-			picture={"/TestImage.png"}
-		/>
-		<ContentCard
-			pictureLeft={false}
-			heading={"Saisonale Küche"}
-			text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
-			picture={"/TestImage.png"}
-		/>
-	</main>
+		<Footer color={"#565B60"} />
+	</div>
 </Layout>
 
 <style>
