@@ -24,16 +24,16 @@ const { color, img, menu } = Astro.props as Props;
 					<nav
 						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head"
 					>
-						<a class="hidden lg:flex" href="#">Unser Menü</a>
-						<a class="hidden lg:flex" href="#Küche">Küche</a>
+						<a class="hidden lg:flex" href="/Menü">Unser Menü</a>
+						<a class="hidden lg:flex" href="/#Küche">Küche</a>
 						<a href="/"
 							><img
 								class={`w-56 lg:w-64 bg-[#E8E7E7] p-4`}
 								src="/Logo.png"
 							/>
 						</a>
-						<a class="hidden lg:flex" href="/anlässe">Anlässe</a>
-						<a class="hidden lg:flex" href="#ÜberUns">Über Uns</a>
+						<a class="hidden lg:flex" href="/Anlässe">Anlässe</a>
+						<a class="hidden lg:flex" href="/#ÜberUns">Über Uns</a>
 					</nav>
 				</div>
 				<!-- Hamburger icon -->
@@ -47,16 +47,16 @@ const { color, img, menu } = Astro.props as Props;
 							<a href="/" onclick="closeMenu()">Startseite</a>
 						</li>
 						<li>
-							<a href="#" onclick="closeMenu()">Unser Menü</a>
+							<a href="/Menü" onclick="closeMenu()">Unser Menü</a>
 						</li>
 						<li>
-							<a href="#Küche" onclick="closeMenu()">Küche</a>
+							<a href="/#Küche" onclick="closeMenu()">Küche</a>
 						</li>
 						<li>
-							<a href="/anlässe" onclick="closeMenu()">Anlässe</a>
+							<a href="/Anlässe" onclick="closeMenu()">Anlässe</a>
 						</li>
 						<li>
-							<a href="#ÜberUns" onclick="closeMenu()"
+							<a href="/#ÜberUns" onclick="closeMenu()"
 								>Über Uns</a>
 						</li>
 					</ul>
