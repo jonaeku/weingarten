@@ -16,6 +16,7 @@
     min-width: 500px;
     max-width: 600px;
     object-fit: contain;
+    border-radius: 4px;
 }
 
 .contentCardText {

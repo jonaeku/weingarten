@@ -22,13 +22,13 @@ const { color, img, menu } = Astro.props as Props;
 				<div class={`w-screen bg-[${color}] h-6`}></div>
 				<div class="flex justify-center items-center">
 					<nav
-						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head"
+						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10"
 					>
-						<a class="hidden lg:flex" href="/Menü">Unser Menü</a>
+						<a class="hidden lg:flex" href="/Menue">Unser Menü</a>
 						<a class="hidden lg:flex" href="/#Küche">Küche</a>
 						<a href="/"
 							><img
-								class={`w-56 lg:w-64 bg-[#E8E7E7] p-4`}
+								class={`w-56 lg:w-64 bg-[#E8E7E7] p-4 rounded-b`}
 								src="/Logo.png"
 							/>
 						</a>
