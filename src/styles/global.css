@@ -1,6 +1,17 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Hairline&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=GFS+Neohellenic&display=swap');
+@font-face {
+    font-family: Bungee;
+    src: url("/public/fonts/Bungee-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: Bungee Hairline;
+    src: url("/public/fonts/BungeeHairline-Regular.ttf") format("truetype");
+}
+
+@font-face {
+    font-family: GFS Neohellenic;
+    src: url("/public/fonts/GFSNeohellenic-Regular.ttf") format("truetype");
+}
 
 .font-head {
     font-family: 'Bungee', cursive;
