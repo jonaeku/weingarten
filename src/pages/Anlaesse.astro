@@ -3,6 +3,7 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 import Layout from "../layouts/Layout.astro";
 import Separator from "../components/Separator";
 import Footer from "../components/Footer";
+import ContactForm from "../components/ContactForm"
 ---
 
 <Layout title="Anlässe" color="#565B60">
@@ -49,9 +50,11 @@ import Footer from "../components/Footer";
     <div class="relative">
         <main>
             <div class="px-[8%] lg:px-[12.5%] max-w-[1920px] mt-8 text-white">
-                <h1 class="font-head text-[20px]">
-                    Familienfeiern, Geburtstage, Taufe etc.
-                </h1>
+                <section id="start">
+                    <h1 class="font-head text-[20px]">
+                        Familienfeiern, Geburtstage, Taufe etc.
+                    </h1>
+                </section>
                 <p class="font-text text-[20px] pt-[10px]">
                     Der Weingarten bietet Ihnen den persönlichen Rahmen und eine
                     liebevolle Betreuung.
@@ -79,6 +82,7 @@ import Footer from "../components/Footer";
                     </p>
                 </div>
                 <Separator color={"#E8E7E7"} />
+                <ContactForm client:load />
             </div>
         </main>
         <img
@@ -86,6 +90,6 @@ import Footer from "../components/Footer";
             src="Sunflower.png"
             alt="Sunflower"
         />
-        <Footer color={"#E8E7E7"} textColor={"#00000"} />
+        <Footer lightText={false} />
     </div>
 </Layout>
