@@ -43,16 +43,27 @@ import Footer from "../components/Footer";
         </div>
     </LandingLayout>
     <div class="relative">
-        <main class="flex flex-col items-center">
-            <img class="w-screen lg:w-[50%]" src="/speisekarte/Speisekarte-1.png" >
-            <img class="w-screen lg:w-[50%]" src="/speisekarte/Speisekarte-2.png" >
-            <img class="w-screen lg:w-[50%]" src="/speisekarte/Speisekarte-3.png" >
-        </main>
+        <section id="start">
+            <main class="flex flex-col items-center">
+                <img
+                    class="w-screen lg:w-[50%]"
+                    src="/speisekarte/Speisekarte-1.png"
+                />
+                <img
+                    class="w-screen lg:w-[50%]"
+                    src="/speisekarte/Speisekarte-2.png"
+                />
+                <img
+                    class="w-screen lg:w-[50%]"
+                    src="/speisekarte/Speisekarte-3.png"
+                />
+            </main>
+        </section>
         <img
             class="absolute bottom-0 right-0 z-5"
             src="Sunflower.png"
             alt="Sunflower"
         />
-        <Footer color={"#E8E7E7"} textColor={"#00000"} />
+        <Footer lightText={false} />
     </div>
 </Layout>

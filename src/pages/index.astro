@@ -49,13 +49,15 @@ import Footer from "../components/Footer";
 	<div class="relative">
 		<main>
 			<div class="px-[8%] lg:px-[12.5%] max-w-[1920px] mt-8">
-				<ContentCard
-					pictureLeft={false}
-					heading={"Saisonale Küche"}
-					text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
-					tel={false}
-					picture={"/pictures/TestImage.png"}
-				/>
+				<section id="start">
+					<ContentCard
+						pictureLeft={false}
+						heading={"Saisonale Küche"}
+						text={"Aktuell haben wir frische pfälzer Spargel für Sie. Diese servieren wir verschiedenen dazu passenden Beilagen. Wir kaufen die Spargeln regionla bei Bauern unseres vertrauens."}
+						tel={false}
+						picture={"/pictures/TestImage.png"}
+					/>
+				</section>
 				<section id="Küche">
 					<Separator color={"#565B60"} />
 					<ContentCard
@@ -98,15 +100,12 @@ import Footer from "../components/Footer";
 			src="Sunflower.png"
 			alt="Sunflower"
 		/>
-		<Footer color={"#565B60"} textColor={"#ffffff"} />
+		<Footer lightText={true} />
 	</div>
 </Layout>
 
 <style>
 	:root {
 		--astro-gradient: linear-gradient(0deg, #4f39fa, #da62c4);
-	}
-	:global(html) {
-		scroll-behavior: smooth;
 	}
 </style>
