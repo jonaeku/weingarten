@@ -19,7 +19,7 @@ const { color, img, menu } = Astro.props as Props;
 	<body>
 		<div class="body lg:h-screen">
 			<div class="absolute h-1/6">
-				<div class={`w-screen bg-[${color}] h-6`}></div>
+				<div class={`w-screen max-w-[1920px] bg-[${color}] h-6`}></div>
 				<div class="flex justify-center items-center">
 					<nav
 						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10"
@@ -72,7 +72,7 @@ const { color, img, menu } = Astro.props as Props;
 			</article>
 			<div class="flex justify-center">
 				<div
-					class={`bg-[${color}] w-full h-6 absolute bottom-0 mb-[-1px]`}
+					class={`bg-[${color}] w-screen max-w-[1920px] h-6 absolute bottom-0 mb-[-1px]`}
 				>
 				</div>
 				<div

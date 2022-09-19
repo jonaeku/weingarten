@@ -1,16 +1,16 @@
 @font-face {
     font-family: Bungee;
-    src: url("/public/fonts/Bungee-Regular.ttf") format("truetype");
+    src: url("/fonts/Bungee-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: Bungee Hairline;
-    src: url("/public/fonts/BungeeHairline-Regular.ttf") format("truetype");
+    src: url("/fonts/BungeeHairline-Regular.ttf") format("truetype");
 }
 
 @font-face {
     font-family: GFS Neohellenic;
-    src: url("/public/fonts/GFSNeohellenic-Regular.ttf") format("truetype");
+    src: url("/fonts/GFSNeohellenic-Regular.ttf") format("truetype");
 }
 
 .font-head {

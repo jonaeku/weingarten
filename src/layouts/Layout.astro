@@ -17,7 +17,7 @@ const { title, color } = Astro.props as Props;
 		<meta name="description" content="Delikatessen & Weine im Idyllischen Weingarten - Kommen Sie uns besuchen und genießen Sie regionale Küche">
 		<title>{title}</title>
 	</head>
-	<body class={`bg-[${color}]`}>
+	<body class={`bg-[${color}] max-w-[1920px]`}>
 		<article>
 			<slot />
 			<!-- your content is injected here -->
@@ -36,8 +36,11 @@ const { title, color } = Astro.props as Props;
 				font-size: var(--font-size-base);
 				color: var(--color-text);
 				background-color: var(--color-bg);
+				display: flex;
+				justify-content: center;
+				align-items: center;
 			}
-
+			
 			body {
 				margin: 0;
 			}
