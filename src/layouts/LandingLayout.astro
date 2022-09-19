@@ -22,7 +22,7 @@ const { color, img, menu } = Astro.props as Props;
 				<div class={`w-screen max-w-[1920px] bg-[${color}] h-6`}></div>
 				<div class="flex justify-center items-center">
 					<nav
-						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10"
+						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10 text-white"
 					>
 						<a class="hidden lg:flex" href="/Menue">Unser Menü</a>
 						<a class="hidden lg:flex" href="/#Küche">Küche</a>
@@ -65,7 +65,7 @@ const { color, img, menu } = Astro.props as Props;
 				<!-- Menu -->
 			</div>
 			<article
-				class={`h-full flex flex-col lg:flex-row items-center justify-center lg:justify-start text-center lg:text-start  bg-center bg-cover ${img}`}
+				class={`h-full flex flex-col lg:flex-row items-center justify-center text-center  bg-center bg-cover ${img}`}
 			>
 				<slot />
 				<!-- your content is injected here -->
