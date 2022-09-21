@@ -4,7 +4,7 @@ const Termine = () => {
             <h2 class="text-center text-[30px] font-head mb-[40px]">
                 Termine
             </h2>
-            <div class="lg:flex justify-evenly">
+            <div class="lg:flex justify-evenly items-center">
                 <div>
                     <p class="text-[25px] underline">Ganze Gans</p>
                     <p class="text-[20px]">im drei Gänge Menü</p>
