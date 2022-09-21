@@ -5,6 +5,7 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 import ContentCard from "../components/ContentCard";
 import Separator from "../components/Separator";
 import OpeningHours from "../components/OpeningHours";
+import Termine from "../components/Termine";
 import Footer from "../components/Footer";
 ---
 
@@ -15,9 +16,7 @@ import Footer from "../components/Footer";
 		img="bg-[url(/LandingPageBackgroundMobile.webp)]"
 		navColorWhite={true}
 	>
-		<div
-			class="flex flex-col items-center mt-[6%]"
-		>
+		<div class="flex flex-col items-center mt-[6%]">
 			<div class="flex flex-col items-center">
 				<div class="text-white">
 					<h1 class="font-head lg:text-5xl lg:leading-[80px]">
@@ -44,7 +43,7 @@ import Footer from "../components/Footer";
 					</h1>
 				</div>
 			</div>
-			<hr class="bg-white border-none h-0.5 mt-6 w-2/3 " />
+			<hr class="bg-white border-none h-0.5 mt-6 w-2/3" />
 		</div>
 	</LandingLayout>
 	<div class="relative">
@@ -54,19 +53,21 @@ import Footer from "../components/Footer";
 					<ContentCard
 						pictureLeft={false}
 						heading={"Saisonale Küche"}
-						text={"Unsere Saisonale Speisekarte folgt der Saison... im Herbst mit frischen Pfifferlingen und heimischem Wild"}
-						textNextLine={}
+						text={"Unsere Saisonale Speisekarte folgt der Saison... "}
+						textNextLine={"im Herbst mit frischen Pfifferlingen und heimischem Wild"}
 						tel={false}
 						picture={"/pictures/pfifferlinge.webp"}
 					/>
 				</section>
+				<Separator color={"#565B60"} />
+				<Termine />
 				<section id="Küche">
 					<Separator color={"#565B60"} />
 					<ContentCard
 						pictureLeft={true}
 						heading={"Küche"}
-						text={"Unsere Köchin Ramona hat einen unglaublich hohen Qualtitäsanspruch. Das spielgt sich nicht nur im wundervollen Geschmack wieder sondern auch in der Wahl der Zutaten. Dieses werden immer frisch und regional eingekauft."}
-						textNextLine={}
+						text={`Unsere Küchenphilosophie: „Frische, saisonale und regionale Lebensmittel - ehrlich zubereitet!"`}
+						textNextLine={"So gestalten wir, zusammen mit unserer Küchenchefin, Ramona Meiser, unsere Speisekarte. Unser hoher Qualitätsanspruch spiegelt sich nicht nur im wundervollen Geschmack wieder sondern auch in der Wahl der Zutaten."}
 						tel={false}
 						picture={"/pictures/Burger.png"}
 					/>
@@ -82,8 +83,8 @@ import Footer from "../components/Footer";
 					<ContentCard
 						pictureLeft={false}
 						heading={"Über uns"}
-						text={"Wir haben uns nach jahrelanger Erfahrung noch einmal dazu entschieden einen neuen Schritt zu wagen. Nur diesmal ist es nicht der Schritt von Sonja sondern die treibende Kraft ist Lukas welcher mit der Unterstützung seiner Mutter etwas tolles für seine Gäste leisten möchte..."}
-						textNextLine={}
+						text={"Sonja Fruth und Lukas Fruth, Mutter und Sohn. Lukas... jung, dynamisch und voller Tatendrang, bewahrt die nötige Ruhe und behält den Überblick. Sonja... jahrelange Erfahrung, kreativ und Macherin, immer ein offenes Ohr und ein nettes Wort ... zusammen ein Team mit Herz und Verstand! Was uns als Menschen ausmacht, prägt unsere Arbeit. Zusammen mit unserem Service- & Küchen-Team sind wir wie ein Mosaik, unterschiedliche Teile fügen sich zusammen zu einem großen Ganzen. WIR sind Leben und Leidenschaft, Herzlichkeit und Gelassenheit, Gefühl und Entschleunigung seien Sie unser Gast im Weingarten, genießen Sie die Wohlfühlatmosphäre."}
+						textNextLine={"Wir freuen uns auf Ihr Lächeln!"}
 						tel={true}
 						picture={"/pictures/About.png"}
 					/>

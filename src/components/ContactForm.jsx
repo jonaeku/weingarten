@@ -125,6 +125,7 @@ const ContactForm = () => {
                     {isActive ? <p className={styles.sendInfo}>Anfrage erfolgreich versendet!</p> : ""}
                 </div>
             </div>
+            <p class="font-text">Wir bitten um Verständnis, dass wir Tischreservierungen im Restaurant ausschließlich TELEFONISCH entgegennehmen.</p>
         </div>
     );
 };

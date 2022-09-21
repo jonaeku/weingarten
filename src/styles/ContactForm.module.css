@@ -147,7 +147,8 @@
   font-size: 20px;
   text-align: center;
   margin-bottom: 0;
-  color: var(--secondary-color);
+  color: #0A9084;
+  margin-bottom: 10px;
 }
 
 @media (max-width: 700px) {
