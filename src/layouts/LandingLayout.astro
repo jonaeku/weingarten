@@ -4,8 +4,14 @@ export interface Props {
 	color: string;
 	img: string;
 	menu: string;
+	navColorWhite: boolean;
 }
-const { color, img, menu } = Astro.props as Props;
+const { color, img, menu, navColorWhite } = Astro.props as Props;
+
+let navBarColor = "white";
+if (!navColorWhite) {
+	navBarColor = "black";
+}
 ---
 
 <!DOCTYPE html>
@@ -22,7 +28,7 @@ const { color, img, menu } = Astro.props as Props;
 				<div class={`w-screen max-w-[1920px] bg-[${color}] h-6`}></div>
 				<div class="flex justify-center items-center">
 					<nav
-						class="flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10 text-white"
+						class={`flex lg:space-x-4 justify-center lg:justify-between items-center w-3/4 text-xl font-head z-10 text-[${navBarColor}]`}
 					>
 						<a class="hidden lg:flex" href="/Menue">Unser Menü</a>
 						<a class="hidden lg:flex" href="/#Küche">Küche</a>
@@ -48,17 +54,20 @@ const { color, img, menu } = Astro.props as Props;
 							<a href="/" onclick="closeMenu()">Startseite</a>
 						</li>
 						<li>
-							<a href="/Menue" onclick="closeMenu()">Unser Menü</a>
+							<a href="/Menue" onclick="closeMenu()">Unser Menü</a
+							>
 						</li>
 						<li>
 							<a href="/#Küche" onclick="closeMenu()">Küche</a>
 						</li>
 						<li>
-							<a href="/Anlaesse" onclick="closeMenu()">Anlässe</a>
+							<a href="/Anlaesse" onclick="closeMenu()">Anlässe</a
+							>
 						</li>
 						<li>
 							<a href="/#ÜberUns" onclick="closeMenu()"
-								>Über Uns</a>
+								>Über Uns</a
+							>
 						</li>
 					</ul>
 				</nav>
@@ -78,7 +87,13 @@ const { color, img, menu } = Astro.props as Props;
 				<div
 					class={`bg-[${color}] w-12 h-12 absolute bottom-0 rounded-full flex justify-center`}
 				>
-					<a href="#start"><img class="w-8 mt-1.5 object-contain" src={`${menu}`} alt="Menu"/></a>
+					<a href="#start"
+						><img
+							class="w-8 mt-1.5 object-contain"
+							src={`${menu}`}
+							alt="Menu"
+						/>
+					</a>
 				</div>
 			</div>
 		</div>
@@ -92,13 +107,13 @@ const { color, img, menu } = Astro.props as Props;
 			@supports selector(:nth-child(1 of x)) {
 				.body {
 					height: 100svh;
-					background-color: #E8E7E7;
+					background-color: #e8e7e7;
 				}
 			}
 			@supports not (-webkit-touch-callout: none) {
 				.body {
 					height: 100vh;
-					background-color: #E8E7E7;
+					background-color: #e8e7e7;
 				}
 			}
 			body {

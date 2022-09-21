@@ -3,16 +3,23 @@ import LandingLayout from "../layouts/LandingLayout.astro";
 import Layout from "../layouts/Layout.astro";
 import Separator from "../components/Separator";
 import Footer from "../components/Footer";
-import ContactForm from "../components/ContactForm"
+import ContactForm from "../components/ContactForm";
 ---
 
 <Layout title="Anlässe" color="#565B60">
-    <LandingLayout color="#565B60" menu="/arrow-white.png" img="">
+    <LandingLayout
+        color="#565B60"
+        menu="/arrow-white.png"
+        img=""
+        navColorWhite={false}
+    >
         <div class="flex flex-col pl-[8%] lg:pl-[12.5%] lg:pr-[6%] mt-[6%]">
             <div class="flex flex-col w-[92%] lg:w-5/6 text-start z-10">
                 <div class="text-black">
-                    <h1 class="font-head lg:text-5xl lg:leading-[70px]">
-                        In einem sehr
+                    <h1
+                        class="font-head inline-block lg:text-5xl lg:leading-[70px]"
+                    >
+                        In einem sehr&nbsp;
                     </h1><h1
                         class="inline-block font-head lg:text-5xl lg:leading-[70px] text-[#0A9084]"
                     >
@@ -20,15 +27,13 @@ import ContactForm from "../components/ContactForm"
                     </h1><h1
                         class="font-head inline-block lg:text-5xl lg:leading-[70px]"
                     >
-                        ,&nbsp;
-                    </h1>
-                    <h1
+                        , &nbsp;
+                    </h1><h1
                         class="font-head inline-block lg:text-5xl lg:leading-[70px]"
                     >
-                        Idyllischen
-                    </h1><h1 class="font-head lg:text-5xl lg:leading-[70px]">
-                        Rahmen können Sie bei uns Ihre
-                    </h1><h1
+                        Idyllischen Rahmen können Sie bei uns Ihre
+                    </h1>
+                    <h1
                         class="font-head inline-block lg:text-5xl lg:leading-[70px] text-[#0A9084]"
                     >
                         Feste feiern
