@@ -4,7 +4,7 @@ sgMail.setApiKey(import.meta.env.PUBLIC_SENDGRID_API);
 export async function post({ request }) {
   const data = await request.json()
   await sgMail.send({
-    to: "hello@ionae.de",
+    to: "info@weingarten-maikammer.de",
     from: "Terminanfrage@ionae.de",
     templateId: "d-2ccd4d493c8d476b8aaeb104bc8dc3ae",
     dynamicTemplateData: {
