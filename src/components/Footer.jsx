@@ -4,6 +4,7 @@ const Footer = ({ lightText }) => {
             <a href="/#Öffnungszeiten">Öffnungszeiten</a>
             <a href="/Impressum">Impressum & Datenschutz</a>
             <a href="tel:063215763330">Telefon: 06321 5763330</a>
+            <a href="mailto:info@weingarten-maikammer.de">info@weingarten-maikammer.de</a>
         </div>
     );
 }

@@ -9,7 +9,7 @@ const Termine = () => {
                     <p class="text-[25px] underline">Ganze Gans</p>
                     <p class="text-[20px]">im drei Gänge Menü</p>
                     <p class="text-[20px]">
-                        (nur auf vorbestellung ab 4 Personen)
+                        (nur auf Vorbestellung ab 4 Personen)
                     </p>
                     <p class="text-[20px]">am 11. / 18. / 25.11</p>
                     <p class="text-[20px]">p.P. ca. 68,50€</p>

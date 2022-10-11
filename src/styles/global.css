@@ -13,6 +13,11 @@
     src: url("/fonts/GFSNeohellenic-Regular.ttf") format("truetype");
 }
 
+@font-face {
+    font-family: GFS Neohellenics;
+    src: url("/fonts/GFSNeohellenic-Bold.ttf") format("truetype");
+}
+
 .font-head {
     font-family: 'Bungee', cursive;
 }
@@ -23,4 +28,8 @@
 
 .font-text {
     font-family: 'GFS Neohellenic', sans-serif;
+}
+
+.font-text-bold {
+    font-family: 'GFS Neohellenics', bold;
 }
