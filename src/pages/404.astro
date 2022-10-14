@@ -1,0 +1,33 @@
+---
+import LandingLayout from "../layouts/LandingLayout.astro";
+import Layout from "../layouts/Layout.astro";
+import Separator from "../components/Separator";
+import Footer from "../components/Footer";
+---
+
+<Layout title="404" color="#565B60">
+    <LandingLayout
+        color="#565B60"
+        menu="/arrow-white.png"
+        img=""
+        navColorWhite={false}
+    >
+        <div class="flex flex-col mt-[6%]">
+            <div class="flex flex-col w-screen z-10">
+                <div class="text-black text-center">
+                    <h1
+                        class="font-head inline-block text-center lg:text-5xl lg:leading-[70px]"
+                    >
+                        404 🔎
+                    </h1><br /><br />
+                    <h1
+                        class="font-head text-center lg:text-5xl lg:leading-[70px]"
+                    >
+                        Seite nicht gefunden.
+                    </h1>
+                </div>
+            </div>
+        </div>
+    </LandingLayout>
+    <div class="relative"><Footer lightText={false} /></div>
+</Layout>
