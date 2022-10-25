@@ -9,7 +9,7 @@ const Termine = () => {
             <div class="lg:flex justify-evenly items-center">
                 <div class="flex flex-col justify-center items-center">
                     <p class="text-[25px] underline">Ganze Gans</p>
-                    <p class="text-[20px]">im drei Gänge Menü</p>
+                    <p class="text-[20px]">im 3-Gänge Menü</p>
                     <p class="text-[20px]">
                         (nur auf Vorbestellung ab 4 Personen)
                     </p>
