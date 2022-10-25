@@ -1,3 +1,5 @@
+import Button from "./Button";
+
 const Termine = () => {
     return (
         <div className="font-text text-center">
@@ -5,15 +7,15 @@ const Termine = () => {
                 Termine
             </h2>
             <div class="lg:flex justify-evenly items-center">
-                <a href="/Termine/Gans Essen">
+                <div class="flex flex-col justify-center items-center">
                     <p class="text-[25px] underline">Ganze Gans</p>
                     <p class="text-[20px]">im drei Gänge Menü</p>
                     <p class="text-[20px]">
                         (nur auf Vorbestellung ab 4 Personen)
                     </p>
                     <p class="text-[20px]">am 11. / 18. / 25.11</p>
-                    <p class="text-[20px]">p.P. ca. 68,50€</p>
-                </a>
+                   <Button url={"Gans Essen"}/>
+                </div>
                 <br />
                 <div>
                     <a class="text-[25px] underline">
@@ -24,14 +26,15 @@ const Termine = () => {
                     <p class="text-[20px]">11:30-14:00 & 14:30-17:00 & 17:30</p>
                 </div>
                 <br />
-                <a href="/Termine/Adventsessen" >
+                <div>
                     <p class="text-[25px] underline">
                         Adventserlebnisabend
                     </p>
                     <p class="text-[20px]">im 6-Gänge Menü</p>
                     <p class="text-[20px]">(nur auf Reservierung)</p>
                     <p class="text-[20px]">am 02.12.2022 Beginn 17:30</p>
-                </a>
+                    <Button url={"Adventsessen"}/>
+                </div>
             </div>
         </div>
     );
