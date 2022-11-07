@@ -5,7 +5,7 @@ const OpeningHours = () => {
             <h3 className="text-[18px]">MO - DI - FR - SA</h3>
             <h3 className="text-[30px]">17.30 - 22.00</h3><br />
             <h3 className="text-[18px]">Sonntag</h3>
-            <h3 className="text-[30px]">12.30 - 22.00</h3>
+            <h3 className="text-[30px]">12.00 - 22.00</h3>
         </div>
     );
 }
