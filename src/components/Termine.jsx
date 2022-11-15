@@ -21,7 +21,6 @@ const Termine = () => {
                     <a class="text-[25px] underline">
                         2. Weihnachtsfeiertag
                     </a>
-                    <p class="text-[20px]">im 3-Gänge Menü</p>
                     <p class="text-[20px]">(nur auf Reservierung)</p>
                     <p class="text-[20px]">11:30-14:00 & 14:30-17:00 & 17:30</p>
                 </div>
