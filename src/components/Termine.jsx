@@ -7,7 +7,7 @@ const Termine = () => {
                 Termine
             </h2>
             <div class="lg:flex justify-evenly items-center">
-                <div class="flex flex-col justify-center items-center">
+                {/* <div class="flex flex-col justify-center items-center">
                     <p class="text-[25px] underline">Ganze Gans</p>
                     <p class="text-[20px]">im 3-Gänge Menü</p>
                     <p class="text-[20px]">
@@ -15,7 +15,7 @@ const Termine = () => {
                     </p>
                     <p class="text-[20px]">am 11. / 18. / 25.11</p>
                    <Button url={"Gans Essen"}/>
-                </div>
+                </div> */}
                 <br />
                 <div>
                     <a class="text-[25px] underline">
@@ -25,7 +25,7 @@ const Termine = () => {
                     <p class="text-[20px]">11:30-14:00 & 14:30-17:00 & 17:30</p>
                 </div>
                 <br />
-                <div>
+                {/* <div>
                     <p class="text-[25px] underline">
                         Adventserlebnisabend
                     </p>
@@ -33,7 +33,7 @@ const Termine = () => {
                     <p class="text-[20px]">(nur auf Reservierung)</p>
                     <p class="text-[20px]">am 02.12.2022 Beginn 17:30</p>
                     <Button url={"Adventsessen"}/>
-                </div>
+                </div> */}
             </div>
         </div>
     );
